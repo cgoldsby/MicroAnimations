@@ -8,10 +8,11 @@
 
 import UIKit
 
+private let fadeDuration: Double = 0.125
 
 extension CATransition {
     
-    static func fade(_ duration: Double = 0.125) -> CATransition {
+    static func fade(_ duration: Double = fadeDuration) -> CATransition {
         let fadeTransition = CATransition()
         fadeTransition.duration = duration
         fadeTransition.type = kCATransitionFade
@@ -39,8 +40,8 @@ extension CATransition {
 
 extension UILabel {
     
-    func fade(in text: String?) {
-        let animation = CATransition.fade(0.5)
+    func fade(in text: String?, duration: Double = fadeDuration) {
+        let animation = CATransition.fade(duration)
         layer.add(animation, forKey: "changeTextAnimation")
         self.text = text
     }
