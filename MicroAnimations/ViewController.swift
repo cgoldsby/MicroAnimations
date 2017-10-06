@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class FadeViewController: UIViewController {
     
     @IBOutlet private var emojiStackView: UIStackView!
     @IBOutlet private var emojiLabel1: UILabel!
@@ -17,7 +17,6 @@ final class ViewController: UIViewController {
     @IBOutlet private var emojiTextLabel1: UILabel!
     @IBOutlet private var emojiTextLabel2: UILabel!
     @IBOutlet private var emojiTextLabel3: UILabel!
-    
     
     private lazy var emojiLabels = [emojiLabel1!, emojiLabel2!, emojiLabel3!]
     private lazy var emojiTextLabels = [emojiTextLabel1!, emojiTextLabel2!, emojiTextLabel3!]
