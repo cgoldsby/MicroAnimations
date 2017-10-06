@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EBC986041F87994000824E0A /* LoopIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC986031F87994000824E0A /* LoopIterator.swift */; };
+		EBC986061F879B7100824E0A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC986051F879B7100824E0A /* TableViewController.swift */; };
 		EBDB94381F864A9800C74E5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDB94371F864A9800C74E5B /* AppDelegate.swift */; };
-		EBDB943A1F864A9800C74E5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDB94391F864A9800C74E5B /* ViewController.swift */; };
+		EBDB943A1F864A9800C74E5B /* FadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDB94391F864A9800C74E5B /* FadeViewController.swift */; };
 		EBDB943D1F864A9800C74E5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDB943B1F864A9800C74E5B /* Main.storyboard */; };
 		EBDB943F1F864A9800C74E5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDB943E1F864A9800C74E5B /* Assets.xcassets */; };
 		EBDB94421F864A9800C74E5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDB94401F864A9800C74E5B /* LaunchScreen.storyboard */; };
@@ -16,9 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EBC986031F87994000824E0A /* LoopIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopIterator.swift; sourceTree = "<group>"; };
+		EBC986051F879B7100824E0A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		EBDB94341F864A9800C74E5B /* MicroAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDB94371F864A9800C74E5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EBDB94391F864A9800C74E5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBDB94391F864A9800C74E5B /* FadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeViewController.swift; sourceTree = "<group>"; };
 		EBDB943C1F864A9800C74E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBDB943E1F864A9800C74E5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBDB94411F864A9800C74E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EBC986021F87992500824E0A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EBC986031F87994000824E0A /* LoopIterator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		EBDB942B1F864A9800C74E5B = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +68,15 @@
 		EBDB94361F864A9800C74E5B /* MicroAnimations */ = {
 			isa = PBXGroup;
 			children = (
-				EBDB94371F864A9800C74E5B /* AppDelegate.swift */,
-				EBDB94391F864A9800C74E5B /* ViewController.swift */,
-				EBDB943B1F864A9800C74E5B /* Main.storyboard */,
-				EBDB943E1F864A9800C74E5B /* Assets.xcassets */,
-				EBDB94401F864A9800C74E5B /* LaunchScreen.storyboard */,
-				EBDB94431F864A9800C74E5B /* Info.plist */,
 				EBDB94491F864AC000C74E5B /* Animations.swift */,
+				EBDB94371F864A9800C74E5B /* AppDelegate.swift */,
+				EBDB943E1F864A9800C74E5B /* Assets.xcassets */,
+				EBC986021F87992500824E0A /* Helpers */,
+				EBDB94431F864A9800C74E5B /* Info.plist */,
+				EBDB94401F864A9800C74E5B /* LaunchScreen.storyboard */,
+				EBDB943B1F864A9800C74E5B /* Main.storyboard */,
+				EBC986051F879B7100824E0A /* TableViewController.swift */,
+				EBDB94391F864A9800C74E5B /* FadeViewController.swift */,
 			);
 			path = MicroAnimations;
 			sourceTree = "<group>";
@@ -139,8 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBDB943A1F864A9800C74E5B /* ViewController.swift in Sources */,
+				EBDB943A1F864A9800C74E5B /* FadeViewController.swift in Sources */,
+				EBC986041F87994000824E0A /* LoopIterator.swift in Sources */,
 				EBDB94381F864A9800C74E5B /* AppDelegate.swift in Sources */,
+				EBC986061F879B7100824E0A /* TableViewController.swift in Sources */,
 				EBDB944A1F864AC000C74E5B /* Animations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
